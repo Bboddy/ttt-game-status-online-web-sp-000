@@ -34,3 +34,7 @@ end
 def over?(board)
   full?(board) || draw?(board)
 end
+
+def winner(board)
+
+end
