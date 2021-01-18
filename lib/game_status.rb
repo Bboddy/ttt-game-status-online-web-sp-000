@@ -16,7 +16,6 @@ WIN_COMBINATIONS = [
 ]
 def won?(board)
   WIN_COMBINATIONS.each do |win|
-    (board[win[0]] == board[win[1]] && board[win[1]] == board[win[2]] && position_taken?(board, win[0])) ? (self.game_won = true) : (self.game_won = false)
+    (board[win[0]] == board[win[1]] && board[win[1]] == board[win[2]] && position_taken?(board, win[0]))
   end
-  self.game_won
 end
